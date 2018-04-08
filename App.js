@@ -1,22 +1,31 @@
-import React , {Component} from 'react';
-import {Text,View} from 'react-native';
-class HelloWord extends Component {
-  render() {
-    return (
-      <Text> Hello {this.props.name} </Text>
-    );
-  }
-}
+import React,{Component} from 'react';
+import {View,Text,StyleSheet} from 'react-native';
 
-export default class TellMe extends Component  {
+export default class LotsOfStyles extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {'status':'test'};
+  }
+
   render() {
     return (
-      <View style={{alignItems: 'center'}}>
-        <HelloWord name="Abu" />
-        <HelloWord name="Zhi" />
-        <HelloWord name="Fei" />
-        <HelloWord name="Jing" />
+      <View>
+        <Text style="{styles.red}">just red - {this.state.status}</Text>
+        <Text style="{styles.bigblue}">just bigblue</Text>
       </View>
     );
   }
+
 }
+
+const styles = StyleSheet.create({
+  bigblue: {
+    color: 'blue',
+    fontWeight: 'bold',
+    fontSize: 30,
+  },
+  red: {
+    color: 'red',
+  },
+});
