@@ -1,0 +1,10 @@
+安装辅助工具
+1. Nuclide
+  打开 Atom ，选择 Settings|Install Packages , 搜索安装 Nuclide
+
+2. Chrome 浏览器
+  Chrome 浏览器是 React Native 开发的远程调试工具，安装比较简单
+  在 Chrome 应用商店中安装插件: React Developer Tools
+
+3. Watchman 工具
+  
