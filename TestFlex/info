@@ -1,0 +1,11 @@
+FlexBox 布局的使用
+Flexbox 布局所使用的属性，可分为两种:
+. 决定子组件排列规则的属性，如: flexDirection、flexWrap、justifyContent 以及 alignItems
+. 决定组件自身显示规则的属性，如: alignSelf 以及 flex 等
+
+flexDirection 属性：表明组件中子组件的排列方向
+flexWrap 属性：表明子组件 “溢出” 父组件时是否换行，取值有 nowrap(默),wrap以及 wrap-reverse
+justifyContent 属性：表明子组件中子组件横向排列在其父容器的哪个位置
+取值, flex-start、flex-end、center、space-between、space-around
+alignItems 属性表明子组件中子组件纵向排列在其父容器的哪个位置，
+取值有 flex-start、flex-end、center、baseline、stretch
