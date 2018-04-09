@@ -20,7 +20,7 @@ export default class Fetch extends Component {
     );
 
   }
-  
+
   get() {
       fetch('http://ip.taobao.com/service/getIpInfo.php?ip=59.108.51.32', {
           method: 'GET',
