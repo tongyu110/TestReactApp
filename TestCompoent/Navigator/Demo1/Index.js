@@ -21,7 +21,7 @@ export default class Index extends Component {
                 return <Component {...route.params} navigator={navigator} />    // 根据板块生成具体组件
         }}
       />
-
+      
 
     );
   }

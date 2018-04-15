@@ -4,7 +4,7 @@ import {View,Text,StyleSheet} from 'react-native';
 export default class Temp extends Component {
 
   render() {
-    
+
     return (
 
       <View style={styles.container}>
