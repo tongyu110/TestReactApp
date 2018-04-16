@@ -1,3 +1,4 @@
+//https://blog.csdn.net/u013718120/article/details/72357698
 import React,{Component} from 'react';
 import {
   AppRegistry,
@@ -37,7 +38,7 @@ export default class Index extends Component  {
                           style={styles.button}>
                           <Image
                               style={styles.thumbnail}
-                              source={{uri:'https://www.taltic.com/Public/images/back_gray_icon.png'}}
+                              source={require('./back_gray_icon.png')}
                           />
                       </TouchableOpacity>
                   );
@@ -69,7 +70,7 @@ export default class Index extends Component  {
                 initialRoute={defaultRoute}
                 renderScene={this.renderScene}
                 sceneStyle={{paddingTop: (Platform.OS === 'android' ? 66 : 74)}}
-                navigationBar={this.renderNavBar()}/>
+                navigationBar={this.renderNavBar()} />
         );
     }
 
